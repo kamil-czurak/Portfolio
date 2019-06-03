@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang='PL-pl'>
+	<head>
+		<meta charset="utf-8">
+		<link rel='stylesheet' href='style.css'>
+		<link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src='script.js'></script>
+	</head>
+
+	<body>
+		<div id='container'>
+			<div id='nav_overlay'>
+					<nav class='navbar_fixed_top'>
+						<div id='personal_container'>
+							<div id='logo'> 
+								<img src='img/logo.png' alt='logo'>
+							</div>
+							<div id='personal_info'>
+								<div id='name'>
+									Kamil Czurak
+								</div>
+								<div id='title'>
+									Back-end Developer
+								</div>	
+							</div>	
+						</div>
+						<button id='hamburger_btn'>
+							<span class='bar1'></span>
+							<span class='bar2'></span>
+							<span class='bar3'></span>
+						</button>
+						<ul id='nav_list'>
+							<li class='active' id='homes'>
+								<a href='#home'  data-id='home' class='nav_link'>Home</a>
+							</li>
+							<li>
+								<a href='#projects' data-id="projects" class='nav_link'>Projekty</a>
+							</li>
+							<li>
+								<a href='#skills' data-id='skills' class='nav_link'>Umiejętności</a>
+							</li>
+							<li>
+								<a href='#contact' data-id='contact' class='nav_link'>Kontakt</a>
+							</li>							
+						</ul>
+					</nav>
+				</div>	
+			<div id='background_overlay'>			
+				<header>
+					<h1>Back-end Developer</h1>
+					<p>
+						Moim celem zawodowym jest podjęcie pracy na stanowisku Back-end Developera. Na co dzień do pracy wykorzystuję język PHP wraz z frameworkiem Laravel.
+					</p>
+
+					<a href='#contact' class='nav_link'>Skontaktuj się ze mną! <span id='arrow_down'><img src='img/arrow_down.png' alt='arrow_down'></span></a>
+				</header>
+			</div>
+
+			<section id='projects'>
+				<h2 class='title_header'><div class='inner-text'>Projekty:<span></span></div></h2>
+				<div class='single_project'>
+					<div class='project_presentation'>
+						<img src='img/krimdesign.png' alt='krimdesign'>
+					</div>
+					<div class='project_info'>
+						<h2 class='project_name'>KrimDesign</h2>
+						<p class='project_description'>Strona na której znajdują się szablony utworzone przez KrimDesignTeam. Głównie są to strony typu one-page.</p>
+						<div class='project_tags'>
+							<a href='http://krimdesign.pl/' target="_blank" class='filled_btn'>Zobacz</a>
+						</div>
+					</div>
+				</div>
+
+				<!--<div class='single_project'>
+					<div class='project_presentation'>
+						<img src='img/wolontariat.png' alt='wolontaria'>
+					</div>
+					<div class='project_info'>
+						<h2 class='project_name'>Wolonatariat Stargard</h2>
+						<p class='project_description'>Witryna wykonana dla wolontariackiego odziału w Stargadzie. Została stworzona przy pomocy frameworka Laravel.</p>
+						<div class='project_tags'>
+							<a href='#' target="_blank" class='filled_btn'>Zobacz</a>
+							<a href='#' target='_blank' class='outline_btn'><img src='img/github.png' alt='GitHub'></a>
+						</div>
+					</div>
+				</div>-->
+
+				<div class='single_project'>
+					<div class='project_presentation'>
+						<img src='img/translator.png' alt='translator'>
+					</div>
+					<div class='project_info'>
+						<h2 class='project_name'>Translator</h2>
+						<p class='project_description'>Aplikacja webowa służąca do tłumaczeń wyrazów i zdań na inny język. Wykonana w języku PHP z obsługą API Yandex Translate.</p>
+						<div class='project_tags'>
+							<a href='https://github.com/kamil-czurak/Translator' target='_blank' class='outline_btn'><img src='img/github.png' alt='GitHub'></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id='skills'>
+				<h2 class='title_header'><div class='inner-text'>Umiejętności:<span></span></div></h2>
+				<div id='flex_skills'>
+					<div class='row_skill'>
+						<div class='image_row_skill'><img src='img/html.png' alt='html'><div class='language'>HTML</div></div>
+						<div class='description_row_skill'>Przy tworzeniu strony internetowej zawsze staram się korzystać z semantycznych znaczników HTML5 co przekłada się na lepsze pozycjonowanie strony w wyszukiwarkach.</div>
+					</div>
+
+					<div class='row_skill'>
+						<div class='image_row_skill'><img src='img/css.png' alt='css'><div class='language'>CSS</div></div>
+						<div class='description_row_skill'>Tworząc witrynę www staram się aby była ona w pełni responsywna w zależności od urządzenia na jakim zostanie uruchomiona. W tym celu wykorzystuję flexbox oraz grid.</div>
+					</div>
+
+					<div class='row_skill'>
+						<div class='image_row_skill'><img src='img/js.png' alt='js'><div class='language'>Javascript</div></div>
+						<div class='description_row_skill'>Dzięki znajomości JavaScript oraz frameworka jQuery jestem w stanie stworzyć witrynę, która jest interaktywna dla użytkownika. Umożliwia to także komunikację z serwerem bez przeładowania strony.</div>
+					</div>
+
+					<div class='row_skill'>
+						<div class='image_row_skill'><img src='img/php.png' alt='php'><div class='language'>PHP</div></div>
+						<div class='description_row_skill'>Przy pomocy frameworka Laravel jestem w stanie zbudować kompletną aplikację internetową, zaczynając od zdefiniowania routingu strony, kończąc na  wyświetlaniu konkretnych widoków. Opieram się głównie na wzorcu MVC.</div>
+					</div>
+				</div>
+			</section>
+
+			<section id='contact'>
+				<h2 class='title_header'><div class='inner-text'>Kontakt:<span></span></div></h2>
+					<form method='post' action='' id='contact_form'>
+						<div class='row_contact'>
+							<label for='user_name'>
+								<input type="text" name="user_name" required placeholder="Imię:">
+							</label>
+							<label for='user_email'>
+								<input type="email" name="user_email" required placeholder="Email:">
+							</label>
+							<label for='user_phone'>
+								<input type="tel" name="user_phone" required placeholder="Telefon:">
+							</label>
+						</div>
+						<label for='user_message'>
+							<textarea name='user_message' placeholder="Wiadomość:"></textarea>
+						</label>	
+						<input type='submit' value='Wyślij' disabled="disabled">
+					</form>	
+			</section>
+
+			<footer>
+				<div class='copyright'>&copy;Kamil Czurak 2019 </div>
+				<div class='socials'>
+					<a href='https://github.com/kamil-czurak/' target='_blank'>
+						<img class='social_img' src='img/github.png' alt='GitHub'> GitHub
+					</a>
+				</div>
+				<div class='socials'>
+					<a href='https://www.linkedin.com/in/kamil-czurak/' target='_blank'>
+						<img class='social_img' src='img/linkedin.png' alt='linkedin'> Linkedin
+					</a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
